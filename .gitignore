@@ -1,0 +1,4 @@
+bt_venv/
+__pycache__/
+.env
+.pytest_cache/
