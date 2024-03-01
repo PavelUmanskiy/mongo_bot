@@ -56,7 +56,7 @@ def aggregate_salary_data(
         extended_salary_df['dt'].dt.strftime(formats[group_type])
     
     data = {
-        'dataset': extended_salary_df['value'].to_list(),
+        'dataset': extended_salary_df['value'].astype(int).to_list(),
         'labels': extended_salary_df['dt'].to_list()
     }
     return data
